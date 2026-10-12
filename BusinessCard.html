@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleopatra Group</title>
+    <!-- FontAwesome library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1C1C1C;
+            color: #E5C07B;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card-container {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Logo Image settings */
+        .logo-img {
+            max-width: 250px; 
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        /* Company Name styling */
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #D1A751;
+            margin: 0 0 35px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Contact Buttons */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background-color: transparent;
+            border: 1px solid #A67C33;
+            border-radius: 8px;
+            color: #D1A751;
+            text-decoration: none;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .link-button:hover {
+            background-color: #A67C33;
+            color: #1C1C1C;
+            border-color: #D1A751;
+        }
+
+        .link-button i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        /* Social Media Icons */
+        .social-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid #A67C33;
+            color: #D1A751;
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: #A67C33;
+            color: #1C1C1C;
+            border-color: #D1A751;
+        }
+
+        /* Locations styling */
+        .locations {
+            font-size: 13px;
+            color: #A67C33;
+            line-height: 1.8;
+            border-top: 1px solid rgba(166, 124, 51, 0.3);
+            padding-top: 25px;
+        }
+
+        .locations strong {
+            color: #D1A751;
+            letter-spacing: 1px;
+        }
+
+        .locations span {
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- Make sure to upload your image file named "logo.png" to GitHub -->
+        <img src="logo.png" alt="Cleopatra Group" class="logo-img">
+        
+        <!-- Company Name -->
+        
+
+        <!-- Contact Links -->
+        <div class="links-container">
+            <a href="mailto:info@cleopatragroup.it" class="link-button">
+                <i class="fas fa-envelope"></i> info@cleopatragroup.it
+            </a>
+            <a href="tel:+390409838448" class="link-button">
+                <i class="fas fa-phone"></i> Tel: 0409838448
+            </a>
+            <a href="https://cleopatragroup.it/" class="link-button">
+                <i class="fas fa-globe"></i> cleopatragroup.it
+            </a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-container">
+            <a href="https://www.facebook.com/CleopatraGroup" class="social-icon" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="xxxxxxx" class="social-icon" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/cleopatragroup-srl" class="social-icon" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <!-- Locations -->
+        <div class="locations">
+            <strong>📍 LOCATIONS</strong><br>
+            <span>Merano, Via A. Manzoni, 43</span>
+            <span>Trieste, Via della Madonnina, 46</span>
+        </div>
+    </div>
+
+</body>
+</html>
