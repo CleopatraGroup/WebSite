@@ -148,7 +148,6 @@
     <!-- Header Fisso con Logo Grande in Alto a Sinistra -->
     <header class="fixed top-0 w-full z-50 bg-[#1C1C1C]/90 backdrop-blur-md border-b border-[#A67C33]/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
-            <!-- LOGO INGRANDITO QUI (h-20 su mobile, h-28 su desktop) -->
             <a href="#" class="flex items-center">
                 <img src="Logo.png" alt="Cleopatra Group" class="h-20 md:h-28 w-auto object-contain">
             </a>
@@ -161,7 +160,6 @@
 
     <!-- Hero Section -->
     <section class="pt-40 pb-20 px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center justify-center min-h-[80vh]">
-        <!-- Logo al Centro -->
         <img src="Logo.png" alt="Cleopatra Group" class="h-40 md:h-48 w-auto mb-8 object-contain">
         
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-cinzel font-bold mb-6 gold-gradient-text uppercase tracking-wider">
@@ -196,6 +194,11 @@
 
             <!-- TAB 1: Hotellerie -->
             <div id="Hotellerie" class="tabcontent max-w-4xl mx-auto">
+                <!-- Immagine di Copertina per Hotellerie -->
+                <div class="overflow-hidden rounded-lg border-2 border-[#D1A751] shadow-[0_0_15px_rgba(209,167,81,0.2)] mb-8 group">
+                    <img src="Hotel.jpg" alt="Servizi Hotellerie e B&B" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                
                 <div class="space-y-6">
                     <div class="bg-[#1C1C1C] border border-[#A67C33]/30 p-6 rounded-lg">
                         <h3 class="text-xl font-cinzel text-[#D1A751] mb-2">Domotica & Smart Automation</h3>
@@ -239,6 +242,11 @@
 
             <!-- TAB 2: Negozi e Uffici -->
             <div id="Negozi" class="tabcontent max-w-4xl mx-auto">
+                <!-- Immagine di Copertina per Negozi -->
+                <div class="overflow-hidden rounded-lg border-2 border-[#D1A751] shadow-[0_0_15px_rgba(209,167,81,0.2)] mb-8 group">
+                    <img src="Negozi.jpg" alt="Servizi Negozi e Uffici" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+
                 <div class="space-y-6">
                     <div class="bg-[#1C1C1C] border border-[#A67C33]/30 p-6 rounded-lg">
                         <h3 class="text-xl font-cinzel text-[#D1A751] mb-2">Vetrine Express & Full</h3>
@@ -266,6 +274,11 @@
 
             <!-- TAB 3: Ristorazione -->
             <div id="Ristorazione" class="tabcontent max-w-4xl mx-auto">
+                <!-- Immagine di Copertina per Ristorazione -->
+                <div class="overflow-hidden rounded-lg border-2 border-[#D1A751] shadow-[0_0_15px_rgba(209,167,81,0.2)] mb-8 group">
+                    <img src="Ristoranti.jpg" alt="Servizi Ristorazione" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+
                 <div class="space-y-6">
                     <div class="bg-[#1C1C1C] border border-[#A67C33]/30 p-6 rounded-lg">
                         <h3 class="text-xl font-cinzel text-[#D1A751] mb-2">Pulizia Tecnica & Igienizzazione</h3>
@@ -375,7 +388,6 @@
         document.getElementById("defaultOpen").click();
 
         // Script per la Chat AI
-        // INSERISCI LA TUA API KEY QUI SOTTO TRA LE VIRGOLETTE
         const API_KEY = "AQ.Ab8RN6KKJURQl3_FyuR106-VF5vbOFiJgyaC0yYPw-sl5uTKOw"; 
         
         const chatWindow = document.getElementById('chat-window');
