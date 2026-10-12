@@ -527,8 +527,12 @@
             let isChatOpen = false;
             let chatHistory = [];
             
-            // Gemini API Configuration
-            const API_KEY = ""; // Canvas injects key automatically when left blank
+            // ==========================================
+            // CONFIGURAZIONE GEMINI API (MOLTO IMPORTANTE)
+            // ==========================================
+            // Per far funzionare la chat sul tuo sito web, DEVI incollare la tua API Key qui sotto tra le virgolette.
+            // Puoi ottenerne una gratis qui: https://aistudio.google.com/app/apikey
+            const API_KEY = ""; // ESEMPIO: "AIzaSyB-xxxx_yyyy_zzzz"
             const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${API_KEY}`;
             
             const systemInstruction = `Sei l'Assistente Virtuale AI ufficiale di Cleopatra Group. 
@@ -601,8 +605,19 @@ Regole:
                 for (let i = 0; i < maxRetries; i++) {
                     try {
                         const response = await fetch(url, options);
-                        if (!response.ok && response.status === 429) {
-                            throw new Error("Rate limited");
+                        
+                        if (!response.ok) {
+                            // Log dettagliato dell'errore per aiutarti a capire il problema
+                            const errorData = await response.json().catch(() => ({}));
+                            console.error("Dettaglio Errore API:", response.status, errorData);
+                            
+                            if (response.status === 400 && API_KEY === "") {
+                                throw new Error("API Key mancante! Inserisci la tua chiave Gemini nel codice.");
+                            }
+                            if (response.status === 429) {
+                                throw new Error("Rate limited");
+                            }
+                            throw new Error(`Errore Server: ${response.status}`);
                         }
                         return response;
                     } catch (err) {
